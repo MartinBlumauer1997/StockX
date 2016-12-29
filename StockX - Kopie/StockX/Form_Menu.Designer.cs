@@ -79,6 +79,7 @@
             this.b_settings.TabIndex = 4;
             this.b_settings.Text = "Einstellungen";
             this.b_settings.UseVisualStyleBackColor = false;
+            this.b_settings.Click += new System.EventHandler(this.b_settings_Click);
             // 
             // b_buildingsite
             // 
@@ -114,6 +115,7 @@
             this.b_bill.TabIndex = 2;
             this.b_bill.Text = "Rechnung";
             this.b_bill.UseVisualStyleBackColor = false;
+            this.b_bill.Click += new System.EventHandler(this.b_bill_Click_1);
             // 
             // panel1
             // 

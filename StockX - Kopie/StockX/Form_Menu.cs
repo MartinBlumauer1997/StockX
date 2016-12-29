@@ -35,8 +35,22 @@ namespace StockX
 
         private void b_storage_Click(object sender, EventArgs e)
         {
-            Form_Bill form_stock = new Form_Bill();
+            Form_Storage form_stock = new Form_Storage();
             form_stock.ShowDialog();
         }
+
+        private void b_settings_Click(object sender, EventArgs e)
+        {
+            Form_Settings form_settings = new Form_Settings();
+            form_settings.ShowDialog();
+        }
+
+        private void b_bill_Click_1(object sender, EventArgs e)
+        {
+
+            Form_Bill form_bill = new Form_Bill();
+            form_bill.ShowDialog();
+        }
+            
     }
 }
