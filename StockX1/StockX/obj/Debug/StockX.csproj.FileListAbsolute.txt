@@ -1,0 +1,13 @@
+C:\Users\Michi Oberwimmer\Desktop\StockX\StockX\bin\Debug\StockX.exe.config
+C:\Users\Michi Oberwimmer\Desktop\StockX\StockX\bin\Debug\StockX.exe
+C:\Users\Michi Oberwimmer\Desktop\StockX\StockX\bin\Debug\StockX.pdb
+C:\Users\Michi Oberwimmer\Desktop\StockX\StockX\obj\Debug\StockX.csprojResolveAssemblyReference.cache
+C:\Users\Michi Oberwimmer\Desktop\StockX\StockX\obj\Debug\StockX.Form_Menu.resources
+C:\Users\Michi Oberwimmer\Desktop\StockX\StockX\obj\Debug\StockX.Properties.Resources.resources
+C:\Users\Michi Oberwimmer\Desktop\StockX\StockX\obj\Debug\StockX.csproj.GenerateResource.Cache
+C:\Users\Michi Oberwimmer\Desktop\StockX\StockX\obj\Debug\StockX.exe
+C:\Users\Michi Oberwimmer\Desktop\StockX\StockX\obj\Debug\StockX.pdb
+C:\Users\Michi Oberwimmer\Desktop\StockX\StockX\obj\Debug\StockX.Form_BuildingSite.resources
+C:\Users\Michi Oberwimmer\Desktop\StockX\StockX\obj\Debug\StockX.Form_Bill.resources
+C:\Users\Michi Oberwimmer\Desktop\StockX\StockX\obj\Debug\StockX.Form_Settings.resources
+C:\Users\Michi Oberwimmer\Desktop\StockX\StockX\obj\Debug\StockX.Form_Storage.resources
