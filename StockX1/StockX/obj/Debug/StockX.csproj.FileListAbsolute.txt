@@ -11,3 +11,18 @@ C:\Users\Michi Oberwimmer\Desktop\StockX\StockX\obj\Debug\StockX.Form_BuildingSi
 C:\Users\Michi Oberwimmer\Desktop\StockX\StockX\obj\Debug\StockX.Form_Bill.resources
 C:\Users\Michi Oberwimmer\Desktop\StockX\StockX\obj\Debug\StockX.Form_Settings.resources
 C:\Users\Michi Oberwimmer\Desktop\StockX\StockX\obj\Debug\StockX.Form_Storage.resources
+C:\Users\Martin\Documents\Blumwimmer\StockX\StockX1\StockX\bin\Debug\StockX.exe.config
+C:\Users\Martin\Documents\Blumwimmer\StockX\StockX1\StockX\obj\Debug\StockX.exe
+C:\Users\Martin\Documents\Blumwimmer\StockX\StockX1\StockX\obj\Debug\StockX.pdb
+C:\Users\Martin\Documents\Blumwimmer\StockX\StockX1\StockX\bin\Debug\StockX.exe
+C:\Users\Martin\Documents\Blumwimmer\StockX\StockX1\StockX\bin\Debug\StockX.pdb
+C:\Users\Martin\Documents\Blumwimmer\StockX\StockX1\StockX\bin\Debug\System.Data.SQLite.dll
+C:\Users\Martin\Documents\Blumwimmer\StockX\StockX1\StockX\bin\Debug\System.Data.SQLite.xml
+C:\Users\Martin\Documents\Blumwimmer\StockX\StockX1\StockX\obj\Debug\StockX.csprojResolveAssemblyReference.cache
+C:\Users\Martin\Documents\Blumwimmer\StockX\StockX1\StockX\obj\Debug\StockX.Form_Bill.resources
+C:\Users\Martin\Documents\Blumwimmer\StockX\StockX1\StockX\obj\Debug\StockX.Form_BuildingSite.resources
+C:\Users\Martin\Documents\Blumwimmer\StockX\StockX1\StockX\obj\Debug\StockX.Form_Menu.resources
+C:\Users\Martin\Documents\Blumwimmer\StockX\StockX1\StockX\obj\Debug\StockX.Form_Settings.resources
+C:\Users\Martin\Documents\Blumwimmer\StockX\StockX1\StockX\obj\Debug\StockX.Form_Storage.resources
+C:\Users\Martin\Documents\Blumwimmer\StockX\StockX1\StockX\obj\Debug\StockX.Properties.Resources.resources
+C:\Users\Martin\Documents\Blumwimmer\StockX\StockX1\StockX\obj\Debug\StockX.csproj.GenerateResource.Cache
