@@ -39,6 +39,7 @@
             this.tb_search = new System.Windows.Forms.TextBox();
             this.l_search = new System.Windows.Forms.Label();
             this.dgv_storeditems = new System.Windows.Forms.DataGridView();
+            this.l_RowCount = new System.Windows.Forms.Label();
             this.tlp_box.SuspendLayout();
             this.tlp_littleBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_storeditems)).BeginInit();
@@ -54,13 +55,14 @@
             this.tlp_box.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.60563F));
             this.tlp_box.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.74648F));
             this.tlp_box.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.21831F));
-            this.tlp_box.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
+            this.tlp_box.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tlp_box.Controls.Add(this.lb_subcategories, 1, 3);
             this.tlp_box.Controls.Add(this.tlp_littleBox, 1, 2);
             this.tlp_box.Controls.Add(this.b_newEntry, 3, 3);
             this.tlp_box.Controls.Add(this.tb_search, 5, 3);
             this.tlp_box.Controls.Add(this.l_search, 4, 3);
             this.tlp_box.Controls.Add(this.dgv_storeditems, 3, 4);
+            this.tlp_box.Controls.Add(this.l_RowCount, 3, 5);
             this.tlp_box.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlp_box.Location = new System.Drawing.Point(0, 0);
             this.tlp_box.Margin = new System.Windows.Forms.Padding(0, 6, 0, 6);
@@ -113,7 +115,7 @@
             this.tlp_littleBox.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 4F));
             this.tlp_littleBox.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlp_littleBox.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
-            this.tlp_littleBox.Size = new System.Drawing.Size(738, 64);
+            this.tlp_littleBox.Size = new System.Drawing.Size(735, 64);
             this.tlp_littleBox.TabIndex = 2;
             // 
             // b_installation
@@ -127,10 +129,11 @@
             this.b_installation.Location = new System.Drawing.Point(2, 6);
             this.b_installation.Margin = new System.Windows.Forms.Padding(2);
             this.b_installation.Name = "b_installation";
-            this.b_installation.Size = new System.Drawing.Size(180, 43);
+            this.b_installation.Size = new System.Drawing.Size(179, 43);
             this.b_installation.TabIndex = 0;
             this.b_installation.Text = "Installation";
             this.b_installation.UseVisualStyleBackColor = false;
+            this.b_installation.Click += new System.EventHandler(this.b_installation_Click);
             // 
             // b_sanitaer
             // 
@@ -140,13 +143,14 @@
             this.b_sanitaer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_sanitaer.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b_sanitaer.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.b_sanitaer.Location = new System.Drawing.Point(191, 6);
+            this.b_sanitaer.Location = new System.Drawing.Point(190, 6);
             this.b_sanitaer.Margin = new System.Windows.Forms.Padding(7, 2, 7, 2);
             this.b_sanitaer.Name = "b_sanitaer";
-            this.b_sanitaer.Size = new System.Drawing.Size(170, 43);
+            this.b_sanitaer.Size = new System.Drawing.Size(169, 43);
             this.b_sanitaer.TabIndex = 1;
             this.b_sanitaer.Text = "Sanitär";
             this.b_sanitaer.UseVisualStyleBackColor = false;
+            this.b_sanitaer.Click += new System.EventHandler(this.b_sanitaer_Click);
             // 
             // b_heizung
             // 
@@ -156,13 +160,14 @@
             this.b_heizung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_heizung.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b_heizung.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.b_heizung.Location = new System.Drawing.Point(370, 6);
+            this.b_heizung.Location = new System.Drawing.Point(368, 6);
             this.b_heizung.Margin = new System.Windows.Forms.Padding(2, 2, 7, 2);
             this.b_heizung.Name = "b_heizung";
-            this.b_heizung.Size = new System.Drawing.Size(175, 43);
+            this.b_heizung.Size = new System.Drawing.Size(174, 43);
             this.b_heizung.TabIndex = 2;
             this.b_heizung.Text = "Heizung";
             this.b_heizung.UseVisualStyleBackColor = false;
+            this.b_heizung.Click += new System.EventHandler(this.b_heizung_Click);
             // 
             // b_dienstleistungen
             // 
@@ -172,7 +177,7 @@
             this.b_dienstleistungen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_dienstleistungen.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b_dienstleistungen.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.b_dienstleistungen.Location = new System.Drawing.Point(554, 6);
+            this.b_dienstleistungen.Location = new System.Drawing.Point(551, 6);
             this.b_dienstleistungen.Margin = new System.Windows.Forms.Padding(2);
             this.b_dienstleistungen.Name = "b_dienstleistungen";
             this.b_dienstleistungen.Size = new System.Drawing.Size(182, 43);
@@ -202,10 +207,10 @@
             // 
             this.tb_search.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tb_search.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_search.Location = new System.Drawing.Point(518, 74);
+            this.tb_search.Location = new System.Drawing.Point(516, 74);
             this.tb_search.Margin = new System.Windows.Forms.Padding(2);
             this.tb_search.Name = "tb_search";
-            this.tb_search.Size = new System.Drawing.Size(235, 36);
+            this.tb_search.Size = new System.Drawing.Size(234, 36);
             this.tb_search.TabIndex = 5;
             // 
             // l_search
@@ -213,7 +218,7 @@
             this.l_search.AutoSize = true;
             this.l_search.Dock = System.Windows.Forms.DockStyle.Right;
             this.l_search.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_search.Location = new System.Drawing.Point(288, 72);
+            this.l_search.Location = new System.Drawing.Point(286, 72);
             this.l_search.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.l_search.Name = "l_search";
             this.l_search.Size = new System.Drawing.Size(226, 52);
@@ -230,8 +235,17 @@
             this.dgv_storeditems.Margin = new System.Windows.Forms.Padding(2, 13, 2, 2);
             this.dgv_storeditems.Name = "dgv_storeditems";
             this.dgv_storeditems.RowTemplate.Height = 35;
-            this.dgv_storeditems.Size = new System.Drawing.Size(609, 330);
+            this.dgv_storeditems.Size = new System.Drawing.Size(606, 330);
             this.dgv_storeditems.TabIndex = 7;
+            // 
+            // l_RowCount
+            // 
+            this.l_RowCount.AutoSize = true;
+            this.l_RowCount.Location = new System.Drawing.Point(145, 469);
+            this.l_RowCount.Name = "l_RowCount";
+            this.l_RowCount.Size = new System.Drawing.Size(16, 13);
+            this.l_RowCount.TabIndex = 8;
+            this.l_RowCount.Text = "...";
             // 
             // Form_Storage
             // 
@@ -264,5 +278,6 @@
         private System.Windows.Forms.TextBox tb_search;
         private System.Windows.Forms.Label l_search;
         private System.Windows.Forms.DataGridView dgv_storeditems;
+        private System.Windows.Forms.Label l_RowCount;
     }
 }

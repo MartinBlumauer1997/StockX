@@ -33,8 +33,19 @@ namespace StockX
         {
             cmd.CommandText = "select l.menge, a.Einheit, a.Bezeichnung, a.Preis, a.Rabatt, l.Menge*a.Preis as Gesamtpreis from lager l, artikelstamm a where l.Artikel_ID = a. Artikel_ID";
             DataTable dt = new DataTable();
-            SQLiteDataAdapter da = new SQLiteDataAdapter(cmd);
-            da.Fill(dt);
+            SQLiteDataAdapter da = null;
+            try
+            {
+                da = new SQLiteDataAdapter(cmd);
+            }
+            catch (Exception w)
+            {
+                System.Windows.Forms.MessageBox.Show("Problem mit der Datenabfrage: " + w.Message);
+            }
+            finally
+            {
+                da.Fill(dt);               
+            }
             return dt;
         }
         public static Database GetInstance()//Singelton(Sicherstellen dass nur eine Instanz dieser Klasse existiert)
@@ -42,6 +53,26 @@ namespace StockX
             if (instance == null)
                 instance = new Database();
             return instance;
+        }
+
+        public DataTable CreateCategorieDataTable(string Category)//Hier wird ein Objekt vom Typ DataTable erstellt um das DGV zu befüllen
+        {
+            cmd.CommandText = "select l.menge, a.Einheit, a.Bezeichnung, a.Preis, a.Rabatt from lager l, artikelstamm a where l.Artikel_ID = a. Artikel_ID and a.Kategorie_ID = (select Kategorie_ID from Kategorie where Bezeichnung = " + '"' + Category + '"' + ")";
+            DataTable dt = new DataTable();
+            SQLiteDataAdapter da = null;
+            try
+            {
+                da = new SQLiteDataAdapter(cmd);
+            }
+            catch (Exception w)
+            {
+                System.Windows.Forms.MessageBox.Show("Problem mit der Datenabfrage: " + w.Message);
+            }
+            finally
+            {
+                da.Fill(dt);
+            }
+            return dt;
         }
     }
 }
