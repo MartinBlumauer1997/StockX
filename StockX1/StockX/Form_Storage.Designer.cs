@@ -55,7 +55,7 @@
             this.tlp_box.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.60563F));
             this.tlp_box.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.74648F));
             this.tlp_box.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.21831F));
-            this.tlp_box.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tlp_box.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tlp_box.Controls.Add(this.lb_subcategories, 1, 3);
             this.tlp_box.Controls.Add(this.tlp_littleBox, 1, 2);
             this.tlp_box.Controls.Add(this.b_newEntry, 3, 3);
@@ -91,8 +91,9 @@
             this.lb_subcategories.Margin = new System.Windows.Forms.Padding(2);
             this.lb_subcategories.Name = "lb_subcategories";
             this.tlp_box.SetRowSpan(this.lb_subcategories, 2);
-            this.lb_subcategories.Size = new System.Drawing.Size(118, 393);
+            this.lb_subcategories.Size = new System.Drawing.Size(117, 393);
             this.lb_subcategories.TabIndex = 1;
+            this.lb_subcategories.SelectedIndexChanged += new System.EventHandler(this.lb_subcategories_SelectedIndexChanged);
             // 
             // tlp_littleBox
             // 
@@ -115,7 +116,7 @@
             this.tlp_littleBox.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 4F));
             this.tlp_littleBox.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlp_littleBox.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
-            this.tlp_littleBox.Size = new System.Drawing.Size(735, 64);
+            this.tlp_littleBox.Size = new System.Drawing.Size(730, 64);
             this.tlp_littleBox.TabIndex = 2;
             // 
             // b_installation
@@ -129,7 +130,7 @@
             this.b_installation.Location = new System.Drawing.Point(2, 6);
             this.b_installation.Margin = new System.Windows.Forms.Padding(2);
             this.b_installation.Name = "b_installation";
-            this.b_installation.Size = new System.Drawing.Size(179, 43);
+            this.b_installation.Size = new System.Drawing.Size(178, 43);
             this.b_installation.TabIndex = 0;
             this.b_installation.Text = "Installation";
             this.b_installation.UseVisualStyleBackColor = false;
@@ -143,10 +144,10 @@
             this.b_sanitaer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_sanitaer.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b_sanitaer.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.b_sanitaer.Location = new System.Drawing.Point(190, 6);
+            this.b_sanitaer.Location = new System.Drawing.Point(189, 6);
             this.b_sanitaer.Margin = new System.Windows.Forms.Padding(7, 2, 7, 2);
             this.b_sanitaer.Name = "b_sanitaer";
-            this.b_sanitaer.Size = new System.Drawing.Size(169, 43);
+            this.b_sanitaer.Size = new System.Drawing.Size(168, 43);
             this.b_sanitaer.TabIndex = 1;
             this.b_sanitaer.Text = "Sanitär";
             this.b_sanitaer.UseVisualStyleBackColor = false;
@@ -160,10 +161,10 @@
             this.b_heizung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_heizung.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b_heizung.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.b_heizung.Location = new System.Drawing.Point(368, 6);
+            this.b_heizung.Location = new System.Drawing.Point(366, 6);
             this.b_heizung.Margin = new System.Windows.Forms.Padding(2, 2, 7, 2);
             this.b_heizung.Name = "b_heizung";
-            this.b_heizung.Size = new System.Drawing.Size(174, 43);
+            this.b_heizung.Size = new System.Drawing.Size(173, 43);
             this.b_heizung.TabIndex = 2;
             this.b_heizung.Text = "Heizung";
             this.b_heizung.UseVisualStyleBackColor = false;
@@ -177,10 +178,10 @@
             this.b_dienstleistungen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_dienstleistungen.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b_dienstleistungen.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.b_dienstleistungen.Location = new System.Drawing.Point(551, 6);
+            this.b_dienstleistungen.Location = new System.Drawing.Point(548, 6);
             this.b_dienstleistungen.Margin = new System.Windows.Forms.Padding(2);
             this.b_dienstleistungen.Name = "b_dienstleistungen";
-            this.b_dienstleistungen.Size = new System.Drawing.Size(182, 43);
+            this.b_dienstleistungen.Size = new System.Drawing.Size(180, 43);
             this.b_dienstleistungen.TabIndex = 3;
             this.b_dienstleistungen.Text = "Dienstleistungen";
             this.b_dienstleistungen.UseVisualStyleBackColor = false;
@@ -194,7 +195,7 @@
             this.b_newEntry.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_newEntry.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b_newEntry.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.b_newEntry.Location = new System.Drawing.Point(143, 73);
+            this.b_newEntry.Location = new System.Drawing.Point(142, 73);
             this.b_newEntry.Margin = new System.Windows.Forms.Padding(1, 1, 50, 6);
             this.b_newEntry.MaximumSize = new System.Drawing.Size(67, 45);
             this.b_newEntry.Name = "b_newEntry";
@@ -207,10 +208,10 @@
             // 
             this.tb_search.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tb_search.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_search.Location = new System.Drawing.Point(516, 74);
+            this.tb_search.Location = new System.Drawing.Point(512, 74);
             this.tb_search.Margin = new System.Windows.Forms.Padding(2);
             this.tb_search.Name = "tb_search";
-            this.tb_search.Size = new System.Drawing.Size(234, 36);
+            this.tb_search.Size = new System.Drawing.Size(233, 36);
             this.tb_search.TabIndex = 5;
             // 
             // l_search
@@ -218,7 +219,7 @@
             this.l_search.AutoSize = true;
             this.l_search.Dock = System.Windows.Forms.DockStyle.Right;
             this.l_search.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_search.Location = new System.Drawing.Point(286, 72);
+            this.l_search.Location = new System.Drawing.Point(282, 72);
             this.l_search.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.l_search.Name = "l_search";
             this.l_search.Size = new System.Drawing.Size(226, 52);
@@ -231,17 +232,17 @@
             this.dgv_storeditems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tlp_box.SetColumnSpan(this.dgv_storeditems, 3);
             this.dgv_storeditems.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_storeditems.Location = new System.Drawing.Point(144, 137);
+            this.dgv_storeditems.Location = new System.Drawing.Point(143, 137);
             this.dgv_storeditems.Margin = new System.Windows.Forms.Padding(2, 13, 2, 2);
             this.dgv_storeditems.Name = "dgv_storeditems";
             this.dgv_storeditems.RowTemplate.Height = 35;
-            this.dgv_storeditems.Size = new System.Drawing.Size(606, 330);
+            this.dgv_storeditems.Size = new System.Drawing.Size(602, 330);
             this.dgv_storeditems.TabIndex = 7;
             // 
             // l_RowCount
             // 
             this.l_RowCount.AutoSize = true;
-            this.l_RowCount.Location = new System.Drawing.Point(145, 469);
+            this.l_RowCount.Location = new System.Drawing.Point(144, 469);
             this.l_RowCount.Name = "l_RowCount";
             this.l_RowCount.Size = new System.Drawing.Size(16, 13);
             this.l_RowCount.TabIndex = 8;

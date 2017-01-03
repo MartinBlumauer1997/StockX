@@ -82,6 +82,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelectedCategory.cs" />
     <EmbeddedResource Include="Form_Bill.resx">
       <DependentUpon>Form_Bill.cs</DependentUpon>
     </EmbeddedResource>
